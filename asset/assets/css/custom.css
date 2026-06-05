@@ -1,0 +1,91 @@
+/**
+ * Custom Styles - Sistem Pakar Gizi Buruk
+ * Warna konsisten mengikuti template Stisla
+ */
+
+:root {
+  --primary: #6777ef;
+  --primary-dark: #4952b8;
+  --primary-light: #8b93f5;
+  --danger: #fc544b;
+  --success: #47c363;
+  --warning: #ffa426;
+  --info: #3abaf4;
+  --dark: #34395e;
+  --text-muted: #98a6ad;
+  --border-color: #e3e8f0;
+  --bg-input: #f4f6fc;
+}
+
+/* Gradient background untuk halaman publik */
+.bg-auth {
+  background: linear-gradient(145deg, #4952b8, #6777ef, #8b93f5);
+  background-size: 300% 300%;
+  animation: gradMove 8s ease infinite;
+}
+
+@keyframes gradMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Tombol gradient primary */
+.btn-gradient {
+  background: linear-gradient(135deg, #6777ef, #8b93f5);
+  border: none;
+  color: #fff;
+  transition: all 0.3s;
+}
+.btn-gradient:hover {
+  background: linear-gradient(135deg, #4952b8, #6777ef);
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(103, 119, 239, 0.4);
+}
+
+/* Card login/splash */
+.card-auth {
+  border-radius: 20px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+}
+
+/* Icon lingkaran gradient */
+.icon-circle {
+  width: 72px;
+  height: 72px;
+  background: linear-gradient(135deg, #6777ef, #8b93f5);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  box-shadow: 0 8px 25px rgba(103, 119, 239, 0.3);
+}
+
+/* Input grup custom */
+.input-group-custom .input-group-prepend .input-group-text {
+  background: #f4f6fc;
+  border: 2px solid #e3e8f0;
+  border-right: none;
+  border-radius: 12px 0 0 12px;
+  color: #98a6ad;
+  transition: all 0.3s;
+}
+.input-group-custom .form-control {
+  border: 2px solid #e3e8f0;
+  border-left: none;
+  border-radius: 0 12px 12px 0;
+  padding: 12px 16px;
+  height: 50px;
+  transition: all 0.3s;
+}
+.input-group-custom .form-control:focus {
+  border-color: #6777ef;
+  box-shadow: none;
+}
+.input-group-custom:focus-within .input-group-prepend .input-group-text {
+  border-color: #6777ef;
+}
+
+/*# sourceMappingURL=custom.css.map */
